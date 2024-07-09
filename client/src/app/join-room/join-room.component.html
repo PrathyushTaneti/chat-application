@@ -1,0 +1,9 @@
+<section class="container d-flex flex-column align-items-center p-5 justify-content-center">
+  <section class="fs-2 fw-bold"> Welcome To Chat Hub</section>
+  <section class="fw-3 fw-bold">Please join a room</section>
+  <section class="form-group my-3 w-75" [formGroup]="userRoomConnectionForm" *ngIf="userRoomConnectionForm">
+    <input type="text" class="form-control mb-3" placeholder="Display Name" formControlName="displayName"/>
+    <input type="text" class="form-control mb-3" placeholder="Room Name" formControlName="roomName"/>
+    <button class="btn btn-outline-primary w-50" (click)="JoinRoom()">Join</button>
+  </section>
+</section>
